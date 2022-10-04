@@ -1,0 +1,22 @@
+{
+    "name": "trimps-tracker",
+    "version": "1.0",
+    "description": "trimps-tracker",
+    "permissions": [],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://trimps.github.io/*"
+            ],
+            "js": [
+                "data.js",
+                "trimps_tracker.js",
+                "run_wasm.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        "trimps_tracker_bg.wasm"
+    ],
+    "manifest_version": 2
+}
